@@ -1,5 +1,10 @@
 #About#
 A simplified UIImage category for using Core Image Filters.
+To accomplish vintage or double exposure effects I am using blend modes using two images.
+
+##Vintage##
+
+![vintage](https://lh5.googleusercontent.com/-ose2-jKOuQc/T8wsvDM4e5I/AAAAAAAACjM/LOj3hKjrPu0/s512/Screen%2520Shot%25202012-06-03%2520at%25209.32.38%2520PM.png "Vintage Using Blend Modes")
 
 ##Vignete##
 ![p1](https://lh6.googleusercontent.com/-LWUEsRJ8sgE/T8wsvFEl3HI/AAAAAAAACjU/YlUM8PUPvKc/s512/Screen%2520Shot%25202012-06-03%2520at%25209.32.55%2520PM.png)
@@ -28,3 +33,22 @@ A simplified UIImage category for using Core Image Filters.
     - (UIImage*) vignetteWithRadius:(float)inputRadius andIntensity:(float)inputIntensity;
     - (UIImage*) blendMode:(NSString *)blendMode withImageNamed:(NSString *) imageName;
     - (UIImage*) curveFilter;
+    
+#Blend Mode#
+
+    - (UIImage*) blendMode:(NSString *)blendMode withImageNamed:(NSString *) imageName;
+
+Will use imageName as a background layer to blendit into your image. 
+
+Available blend modes you can use are:
+
+*CISoftLightBlendMode
+*CIMultiplyBlendMode
+*CISaturationBlendMode
+*CIScreenBlendMode
+*CIMultiplyCompositing
+*CIHardLightBlendMode
+
+#Apple Documentation#
+
+[Core Image Filter Reference](https://developer.apple.com/library/mac/documentation/graphicsimaging/reference/CoreImageFilterReference/index.html)
