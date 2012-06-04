@@ -12,16 +12,19 @@ A simplified UIImage category for using Core Image Filters.
 
 #How to use on your project#
 
-* Add UIImage+Filters.h and UIImage+Filters.m to your project
+* Drag `UIImage+Filters.h` and `UIImage+Filters.m` to your project
+* Include the header file `#import "UIImage+Filters.h"`
 * Be sure to include the CoreImage.framework on your project
 * To apply a filter to an UIImage just to this
 
+#Sample Code    
+
+    UIImage* myImage  = [UIImage imageNamed:@"myphoto.jpg"];
     myImage = [myImage saturateImage:0 withContrast:1.05];
     
 #Current Filters#
 
     - (UIImage*) saturateImage:(float)saturationAmount withContrast:(float)contrastAmount;
     - (UIImage*) vignetteWithRadius:(float)inputRadius andIntensity:(float)inputIntensity;
-    - (UIImage*) worn;
     - (UIImage*) blendMode:(NSString *)blendMode withImageNamed:(NSString *) imageName;
     - (UIImage*) curveFilter;
