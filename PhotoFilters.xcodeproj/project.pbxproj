@@ -15,6 +15,13 @@
 		2EC44360157BEE030089DADB /* PhotoFilterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4435F157BEE030089DADB /* PhotoFilterAppDelegate.m */; };
 		2EC44363157BEE030089DADB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC44361157BEE030089DADB /* MainStoryboard.storyboard */; };
 		2EC44366157BEE030089DADB /* PhotoFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC44365157BEE030089DADB /* PhotoFilterViewController.m */; };
+		2EC4436D157BEEC40089DADB /* flowers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4436C157BEEC40089DADB /* flowers.jpg */; };
+		2EC44371157BEF830089DADB /* UIImage+Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC44370157BEF830089DADB /* UIImage+Filters.m */; };
+		2EC44373157BF1FD0089DADB /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC44372157BF1FD0089DADB /* CoreImage.framework */; };
+		2EC44379157BF8E90089DADB /* nyc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EC44378157BF8E90089DADB /* nyc.jpg */; };
+		2EC4437B157C4D970089DADB /* paper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4437A157C4D970089DADB /* paper.jpg */; };
+		2EC4437D157C53160089DADB /* gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4437C157C53160089DADB /* gradient.jpg */; };
+		2EC4437F157C5D340089DADB /* highline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4437E157C5D340089DADB /* highline.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +29,23 @@
 		2EC4434F157BEE030089DADB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2EC44351157BEE030089DADB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2EC44353157BEE030089DADB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2EC44357157BEE030089DADB /* PhotoFilters-Info.plist */ = {isa = PBXFileReference; path = "PhotoFilters-Info.plist"; sourceTree = "<group>"; };
+		2EC44357157BEE030089DADB /* PhotoFilters-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoFilters-Info.plist"; sourceTree = "<group>"; };
 		2EC44359157BEE030089DADB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2EC4435B157BEE030089DADB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2EC4435D157BEE030089DADB /* PhotoFilters-Prefix.pch */ = {isa = PBXFileReference; path = "PhotoFilters-Prefix.pch"; sourceTree = "<group>"; };
-		2EC4435E157BEE030089DADB /* PhotoFilterAppDelegate.h */ = {isa = PBXFileReference; path = PhotoFilterAppDelegate.h; sourceTree = "<group>"; };
+		2EC4435D157BEE030089DADB /* PhotoFilters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoFilters-Prefix.pch"; sourceTree = "<group>"; };
+		2EC4435E157BEE030089DADB /* PhotoFilterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoFilterAppDelegate.h; sourceTree = "<group>"; };
 		2EC4435F157BEE030089DADB /* PhotoFilterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoFilterAppDelegate.m; sourceTree = "<group>"; };
 		2EC44362157BEE030089DADB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		2EC44364157BEE030089DADB /* PhotoFilterViewController.h */ = {isa = PBXFileReference; path = PhotoFilterViewController.h; sourceTree = "<group>"; };
+		2EC44364157BEE030089DADB /* PhotoFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoFilterViewController.h; sourceTree = "<group>"; };
 		2EC44365157BEE030089DADB /* PhotoFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoFilterViewController.m; sourceTree = "<group>"; };
+		2EC4436C157BEEC40089DADB /* flowers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flowers.jpg; sourceTree = "<group>"; };
+		2EC4436F157BEF830089DADB /* UIImage+Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Filters.h"; sourceTree = "<group>"; };
+		2EC44370157BEF830089DADB /* UIImage+Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Filters.m"; sourceTree = "<group>"; };
+		2EC44372157BF1FD0089DADB /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		2EC44378157BF8E90089DADB /* nyc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nyc.jpg; sourceTree = "<group>"; };
+		2EC4437A157C4D970089DADB /* paper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paper.jpg; sourceTree = "<group>"; };
+		2EC4437C157C53160089DADB /* gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gradient.jpg; sourceTree = "<group>"; };
+		2EC4437E157C5D340089DADB /* highline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = highline.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC44373157BF1FD0089DADB /* CoreImage.framework in Frameworks */,
 				2EC44350157BEE030089DADB /* UIKit.framework in Frameworks */,
 				2EC44352157BEE030089DADB /* Foundation.framework in Frameworks */,
 				2EC44354157BEE030089DADB /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +66,7 @@
 		2EC44340157BEE020089DADB = {
 			isa = PBXGroup;
 			children = (
+				2EC44372157BF1FD0089DADB /* CoreImage.framework */,
 				2EC44355157BEE030089DADB /* PhotoFilters */,
 				2EC4434E157BEE030089DADB /* Frameworks */,
 				2EC4434C157BEE030089DADB /* Products */,
@@ -77,11 +94,14 @@
 		2EC44355157BEE030089DADB /* PhotoFilters */ = {
 			isa = PBXGroup;
 			children = (
+				2EC4436E157BEECB0089DADB /* Images */,
 				2EC4435E157BEE030089DADB /* PhotoFilterAppDelegate.h */,
 				2EC4435F157BEE030089DADB /* PhotoFilterAppDelegate.m */,
 				2EC44361157BEE030089DADB /* MainStoryboard.storyboard */,
 				2EC44364157BEE030089DADB /* PhotoFilterViewController.h */,
 				2EC44365157BEE030089DADB /* PhotoFilterViewController.m */,
+				2EC4436F157BEF830089DADB /* UIImage+Filters.h */,
+				2EC44370157BEF830089DADB /* UIImage+Filters.m */,
 				2EC44356157BEE030089DADB /* Supporting Files */,
 			);
 			path = PhotoFilters;
@@ -96,6 +116,18 @@
 				2EC4435D157BEE030089DADB /* PhotoFilters-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EC4436E157BEECB0089DADB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2EC4437E157C5D340089DADB /* highline.jpg */,
+				2EC44378157BF8E90089DADB /* nyc.jpg */,
+				2EC4437C157C53160089DADB /* gradient.jpg */,
+				2EC4437A157C4D970089DADB /* paper.jpg */,
+				2EC4436C157BEEC40089DADB /* flowers.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +184,11 @@
 			files = (
 				2EC4435A157BEE030089DADB /* InfoPlist.strings in Resources */,
 				2EC44363157BEE030089DADB /* MainStoryboard.storyboard in Resources */,
+				2EC4436D157BEEC40089DADB /* flowers.jpg in Resources */,
+				2EC44379157BF8E90089DADB /* nyc.jpg in Resources */,
+				2EC4437B157C4D970089DADB /* paper.jpg in Resources */,
+				2EC4437D157C53160089DADB /* gradient.jpg in Resources */,
+				2EC4437F157C5D340089DADB /* highline.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +202,7 @@
 				2EC4435C157BEE030089DADB /* main.m in Sources */,
 				2EC44360157BEE030089DADB /* PhotoFilterAppDelegate.m in Sources */,
 				2EC44366157BEE030089DADB /* PhotoFilterViewController.m in Sources */,
+				2EC44371157BEF830089DADB /* UIImage+Filters.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

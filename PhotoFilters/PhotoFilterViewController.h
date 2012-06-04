@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface PhotoFilterViewController : UIViewController
+- (IBAction)applyFilter:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *myPhoto;
+- (IBAction)resetImage;
 
 @end
