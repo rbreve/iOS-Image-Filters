@@ -6,7 +6,7 @@ To accomplish vintage or double exposure effects I am using blend modes using tw
 
 ![vintage](https://lh5.googleusercontent.com/-ose2-jKOuQc/T8wsvDM4e5I/AAAAAAAACjM/LOj3hKjrPu0/s512/Screen%2520Shot%25202012-06-03%2520at%25209.32.38%2520PM.png "Vintage Using Blend Modes")
 
-##Vignete##
+##Vignette##
 ![p1](https://lh6.googleusercontent.com/-LWUEsRJ8sgE/T8wsvFEl3HI/AAAAAAAACjU/YlUM8PUPvKc/s512/Screen%2520Shot%25202012-06-03%2520at%25209.32.55%2520PM.png)
 
 ##Double Exposure using Blend Modes##
@@ -42,12 +42,12 @@ Will use imageName as a background layer to blendit into your image.
 
 Available blend modes you can use are:
 
-*CISoftLightBlendMode
-*CIMultiplyBlendMode
-*CISaturationBlendMode
-*CIScreenBlendMode
-*CIMultiplyCompositing
-*CIHardLightBlendMode
+* CISoftLightBlendMode
+* CIMultiplyBlendMode
+* CISaturationBlendMode
+* CIScreenBlendMode
+* CIMultiplyCompositing
+* CIHardLightBlendMode
 
 #Apple Documentation#
 
