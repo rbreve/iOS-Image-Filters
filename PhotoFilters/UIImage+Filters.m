@@ -25,7 +25,7 @@
     [filter setValue:[NSNumber numberWithFloat:contrastAmount] forKey:@"inputContrast"];
     
     
-    return [UIImage imageWithCGImage:[context createCGImage:filter.outputImage fromRect:filter.outputImage.extent]];
+    return [self imageFromContext:context withFilter:filter];
     
 }
 
@@ -44,9 +44,7 @@
      [filter setValue:[NSNumber numberWithFloat:inputIntensity] forKey:@"inputIntensity"];
      [filter setValue:[NSNumber numberWithFloat:inputRadius] forKey:@"inputRadius"];
      
-    
-    return [UIImage imageWithCGImage:[context createCGImage:[filter outputImage] fromRect:filter.outputImage.extent]];
-    
+     return [self imageFromContext:context withFilter:filter];
 }
 
 -(UIImage*)worn{
@@ -72,7 +70,10 @@
                          nil];
     CIImage *outputImageC = [filterC outputImage];
     CIContext *context = [CIContext contextWithOptions:nil];
-    return [UIImage imageWithCGImage:[context createCGImage:outputImageC fromRect:outputImageC.extent] scale:1.0 orientation:self.imageOrientation];
+    CGImageRef imageRef = [context createCGImage:outputImageC fromRect:outputImageC.extent];
+    UIImage *image = [UIImage imageWithCGImage:imageRef scale:1.0 orientation:self.imageOrientation];
+    CGImageRelease(imageRef);
+    return image;
 }
 
 
@@ -105,10 +106,7 @@
     [filter setValue:inputImage forKey:@"inputBackgroundImage"];
     [filter setValue:bgCIImage forKey:@"inputImage"];
     
-     
-    
-    return [UIImage imageWithCGImage:[context createCGImage:[filter outputImage] fromRect:filter.outputImage.extent]];
-    
+    return [self imageFromContext:context withFilter:filter];
 }
 
 
@@ -131,12 +129,20 @@
     [filter setValue:[CIVector vectorWithX:0.75  Y:0.85] forKey:@"inputPoint3"];
     [filter setValue:[CIVector vectorWithX:1.0  Y:1.0] forKey:@"inputPoint4"]; // default
   
+    return [self imageFromContext:context withFilter:filter];
+}
 
-    return [UIImage imageWithCGImage:[context createCGImage:[filter outputImage] fromRect:filter.outputImage.extent]];
 
-
+- (UIImage*)imageFromContext:(CIContext*)context withFilter:(CIFilter*)filter
+{
+    
+    CGImageRef imageRef = [context createCGImage:[filter outputImage] fromRect:filter.outputImage.extent];
+    UIImage *image = [UIImage imageWithCGImage:imageRef];
+    CGImageRelease(imageRef);
+    return image;
     
 }
+
 
 
 
