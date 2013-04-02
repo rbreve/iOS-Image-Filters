@@ -137,7 +137,7 @@
 {
     
     CGImageRef imageRef = [context createCGImage:[filter outputImage] fromRect:filter.outputImage.extent];
-    UIImage *image = [UIImage imageWithCGImage:imageRef];
+    UIImage *image = [UIImage imageWithCGImage:imageRef scale:self.scale orientation:self.imageOrientation];
     CGImageRelease(imageRef);
     return image;
     
